@@ -1,13 +1,13 @@
 
-# 🎬 YouTube Q&A Chatbot (TubeTalk Bot)
+#  YouTube Q&A Chatbot (TubeTalk Bot)
 
-## 📌 Project Goal
+##  Project Goal
 
 The **TubeTalk Bot** is an interactive AI chatbot that allows users to input a YouTube video URL and ask questions about the video through **text or voice**. It transcribes the video audio, builds a searchable vector database, and responds with accurate answers or summaries using **LangChain Agents** and **OpenAI GPT-4**.
 
 ---
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 1. **User Input**: The user submits a YouTube link.
 2. **Audio Extraction**: Audio is downloaded from the video using `yt_dlp`.
@@ -21,7 +21,7 @@ The **TubeTalk Bot** is an interactive AI chatbot that allows users to input a Y
 
 ---
 
-## 🧪 Methodology
+##  Methodology
 
 - **Audio Extraction**: Extract high-quality audio from YouTube using `yt_dlp`.
 - **Transcription**: Use OpenAI's `whisper` model for multilingual, accurate audio transcription.
@@ -32,7 +32,7 @@ The **TubeTalk Bot** is an interactive AI chatbot that allows users to input a Y
 
 ---
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone the repository
 
@@ -65,7 +65,7 @@ LANGCHAIN_API_KEY=your_langchain_api_key
 
 ---
 
-## 🚀 Running the App
+##  Running the App
 
 ```bash
 chainlit run newapp.py --port 8501
@@ -75,7 +75,7 @@ Visit `http://localhost:8501` in your browser to use the chatbot.
 
 ---
 
-## 🗣️ Usage Guide
+##  Usage Guide
 
 1. **Enter a YouTube link** — e.g., `https://www.youtube.com/watch?v=abcd1234`.
 2. Wait while the video is processed (audio extracted, transcribed, and embedded).
@@ -86,15 +86,15 @@ Visit `http://localhost:8501` in your browser to use the chatbot.
 
 ---
 
-## 📎 Example Prompts
+##  Example Prompts
 
 - "Summarize the video for me."
-- "What did the speaker say about climate change?"
+- "What the video is talking about?"
 - "ماذا قال عن الذكاء الاصطناعي؟"
 
 ---
 
-## ✅ Features
+##  Features
 
 - 🎧 Voice-to-text input using `Whisper`
 - 🔍 Semantic search with `Chroma`
