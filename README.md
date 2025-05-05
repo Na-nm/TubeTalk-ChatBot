@@ -65,19 +65,6 @@ LANGCHAIN_API_KEY=your_langchain_api_key
 
 ---
 
-## 📁 Repository Structure
-
-```
-.
-├── newapp.py               # Main Chainlit application
-├── requirements.txt        # Dependencies
-├── sessions/               # Temporary session storage (auto-created)
-├── saved_audio/            # Stores recorded voice input
-└── .env                    # API keys (not committed)
-```
-
----
-
 ## 🚀 Running the App
 
 ```bash
