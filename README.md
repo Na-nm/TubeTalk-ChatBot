@@ -9,16 +9,15 @@ The **TubeTalk Bot** is an interactive AI chatbot that allows users to input a Y
 
 ## 🏗️ Architecture Overview
 
-```mermaid
-graph TD
-  A[User Input (YouTube URL)] --> B[Download Audio using yt_dlp]
-  B --> C[Transcribe using Whisper]
-  C --> D[Split Text into Chunks]
-  D --> E[Build Chroma Vectorstore]
-  E --> F[LangChain Agent (GPT-4)]
-  F --> G[Answer Question or Summarize]
-  G --> H[Display in Chainlit Interface]
-```
+1. **User Input**: The user submits a YouTube link.
+2. **Audio Extraction**: Audio is downloaded from the video using `yt_dlp`.
+3. **Transcription**: Audio is transcribed to text using the `Whisper` model.
+4. **Chunking**: The transcript is split into manageable text chunks.
+5. **Vector Storage**: The chunks are embedded and stored in a Chroma vector database.
+6. **Agent Reasoning**: A LangChain agent (powered by GPT-4) uses tools to either:
+   - Summarize the transcript.
+   - Search for relevant content to answer user questions.
+7. **User Interaction**: The response is delivered through the Chainlit interface.
 
 ---
 
