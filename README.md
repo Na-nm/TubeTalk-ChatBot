@@ -37,8 +37,8 @@ The **TubeTalk Bot** is an interactive AI chatbot that allows users to input a Y
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/youtube-ai-chatbot.git
-cd youtube-ai-chatbot
+git clone https://https://github.com/Na-nm/TubeTalk-ChatBot.git
+cd TubeTalk-ChatBot
 ```
 
 ### 2. Create and activate a virtual environment
@@ -68,10 +68,10 @@ LANGCHAIN_API_KEY=your_langchain_api_key
 ##  Running the App
 
 ```bash
-chainlit run newapp.py --port 8501
+chainlit run newapp.py 
 ```
 
-Visit `http://localhost:8501` in your browser to use the chatbot.
+Visit `http://localhost:8500` in your browser to use the chatbot.
 
 ---
 
