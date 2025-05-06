@@ -68,7 +68,7 @@ LANGCHAIN_API_KEY=your_langchain_api_key
 ##  Running the App
 
 ```bash
-chainlit run newapp.py 
+chainlit run TubeTalkChatBot.py 
 ```
 
 Visit `http://localhost:8500` in your browser to use the chatbot.
